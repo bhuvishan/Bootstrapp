@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e4f9a391be.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+  
+    
+
+ <style>
+        h1{
+          text-align: center;
+          text-transform: capitalize;
+          margin-top:20px; 
+          
+          
+       }
+       nav{
+    margin-left: 290px;
+  padding: 20px;
+ }
+       h5{
+          text-align: center; font-size:50px;
+          text-transform: capitalize;}
+       p{
+           text-align: center;
+           margin-top:30px;
+           font-size: 20px;
+       }
+       .p1{
+      margin-top:200px;
+       }
+       .carousel {
+        height: 300px;
+        width: 300px;
+       }
+       .card{
+        margin-top: 30px;
+height: 400px;
+width: 300px;
+border: 3px 3px 3px 3pa;
+       }
+       
+       img{
+        margin-top: 30px;
+        margin-left: 30px;
+       }
+       h2{
+        margin-top: 20px;
+       }
+       #b1{
+        margin-left: 20px;
+        margin-top: 20px;
+       }
+       #b2{
+        margin-left: 20px;
+        margin-top: 20px;
+       }#b3{
+        margin-left: 20px;
+        margin-top: 20px;
+       }
+       #b4{
+        margin-left: 20px;
+        margin-top: 20px;
+       }
+       #b5{
+        margin-left: 20px;
+        margin-top: 20px;
+       }
+       #b6{
+        margin-left: 20px;
+        margin-top: 20px;
+       }
+       .home
+       {
+        
+        float:right;
+            width: 500px;
+            height: 500px;
+            margin-bottom: 30px;
+        border-radius: 20 px;
+        
+       }
+       .img1{
+    padding-right: 70px;
+   
+}
+.img3{
+    padding-left: 60px;
+}
+.img2{
+  margin-top: 80px;
+}
+      
+       blockquote{
+        float: left;
+        margin-top :30px;
+        margin: left 700px;
+       }
+       .footer {
+    margin-top: 650px;
+  background-color: #0a0202;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  color: white;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer .col-md-4 {
+  flex-basis: 33.33%;
+}
+
+.footer h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.imglast{
+  transition: transform 0.3s ease-in-out;
+  margin-right: 60px;
+}
+.imglast:hover
+{
+  transform: translateY(-10px);
+    box-shadow: 1px 1px 1px 1px black;
+
+}
+
+
+.footer li {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.footer a:hover {
+  color: #23527c;
+}
+#link:hover {
+    background-color: #c3daee;
+}
+#link1:hover {
+    background-color: #c3daee;
+}
+#link2:hover {
+    background-color: #c3daee;
+}
+#link3:hover {
+    background-color: #c3daee;
+}
+#but1{
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 10px;
+  width: 250px;
+    }
+    #but2{
+        
+        text-align: center;
+        margin-top: 10px;
+        margin-left
+        : 10px;
+  width: 250px;}
+  #but4{
+    margin-top: 10px;
+        margin-left
+        : 10px;
+  }
+  #but3{
+    margin-top: 10px;
+        margin-left
+        : 10px;
+  }
+  .img1:hover{
+    transform: scale(1.2);
+  }
+
+  .img3:hover{
+    transform: scale(1.2);
+  }
+.h1{
+  float:left;
+}
+.v2{
+  float:right;
+            width: 500px;
+            height: 500px;
+            margin-bottom: 30px;
+}
+  </style>
+</head>
+
+<body>
+
+  <script>
+    window.addEventListener('mouseover', initLandbot, { once: true });
+    window.addEventListener('touchstart', initLandbot, { once: true });
+    var myLandbot;
+    function initLandbot() {
+      if (!myLandbot) {
+        var s = document.createElement('script');
+        s.type = "module"
+        s.async = true;
+        s.addEventListener('load', function() {
+          var myLandbot = new Landbot.Livechat({
+            configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2751997-ZKS47BC811C4CZF9/index.json',
+          });
+        });
+        s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+    }
+    </script>
+  <nav class="navbar navbar-expand-lg bg-drak">
+    <img class="logo" style="height: 100px; width: 100px; margin-top: 5px;" src="C:\worksheet\Brigitte.png" alt="">
+      <div class="container-fluid">
+        
+        <a  style="padding: 10px; text-transform: capitalize;" class="navbar-brand" href="home.html">SB support</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span> 
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+             
+             
+              <li class="nav-item dropdown">
+                <a style="padding: 10px; text-transform: capitalize" id="link" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="destop.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M360-400h260q42 0 71-29.5t29-71.5q0-42-30-71t-72-29q-8-51-47-85t-91-34q-41 0-75 22t-51 59q-48 2-81 36.5T240-520q0 50 35 85t85 35Zm0-80q-17 0-28.5-11.5T320-520q0-17 11.5-28.5T360-560h50v-10q0-29 20.5-49.5T480-640q29 0 49.5 20.5T550-570v50h70q8 0 14 6t6 14q0 8-6 14t-14 6H360Zm-40 360v-80h80v-80H160q-33 0-56.5-23.5T80-360v-400q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v400q0 33-23.5 56.5T800-280H560v80h80v80H320ZM160-360h640v-400H160v400Zm0 0v-400 400Z"/></svg>desktop</a></li>
+                  <li><a class="dropdown-item" href="-phone.html"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-120v40h400v-40H280Zm0-80h400v-480H280v480Zm0-560h400v-40H280v40Zm0 0v-40 40Zm0 640v40-40Z"/></svg>smart phone</a></li>
+                  <li><a class="dropdown-item" href="watch.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M420-800h120-120Zm0 640h120-120Zm-60 80-54-182q-48-38-77-95t-29-123q0-66 29-123t77-95l54-182h240l54 182q48 38 77 95t29 123q0 66-29 123t-77 95L600-80H360Zm120-200q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680q-83 0-141.5 58.5T280-480q0 83 58.5 141.5T480-280Zm-76-470q20-5 38.5-8t37.5-3q19 0 37.5 3t38.5 8l-16-50H420l-16 50Zm16 590h120l16-50q-20 5-38.5 7.5T480-200q-19 0-37.5-2.5T404-210l16 50Z"/></svg>smart watch</a></li>
+                  <li><a class="dropdown-item" href="head phone.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M360-120H200q-33 0-56.5-23.5T120-200v-280q0-75 28.5-140.5t77-114q48.5-48.5 114-77T480-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480v280q0 33-23.5 56.5T760-120H600v-320h160v-40q0-117-81.5-198.5T480-760q-117 0-198.5 81.5T200-480v40h160v320Zm-80-240h-80v160h80v-160Zm400 0v160h80v-160h-80Zm-400 0h-80 80Zm400 0h80-80Z"/></svg>head set</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">others</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a style="padding: 10px; text-transform: capitalize " id="link1"class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               resources
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="customer support.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M440-120v-80h320v-284q0-117-81.5-198.5T480-764q-117 0-198.5 81.5T200-484v244h-40q-33 0-56.5-23.5T80-320v-80q0-21 10.5-39.5T120-469l3-53q8-68 39.5-126t79-101q47.5-43 109-67T480-840q68 0 129 24t109 66.5Q766-707 797-649t40 126l3 52q19 9 29.5 27t10.5 38v92q0 20-10.5 38T840-249v49q0 33-23.5 56.5T760-120H440Zm-80-280q-17 0-28.5-11.5T320-440q0-17 11.5-28.5T360-480q17 0 28.5 11.5T400-440q0 17-11.5 28.5T360-400Zm240 0q-17 0-28.5-11.5T560-440q0-17 11.5-28.5T600-480q17 0 28.5 11.5T640-440q0 17-11.5 28.5T600-400Zm-359-62q-7-106 64-182t177-76q89 0 156.5 56.5T720-519q-91-1-167.5-49T435-698q-16 80-67.5 142.5T241-462Z"/></svg> support service
+                  </a></li>
+                  <li><a class="dropdown-item" href="help.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>help center</a></li>
+                  <li><a class="dropdown-item" href="blog.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>blog</a></li>
+                  <li><a class="dropdown-item" href="guide.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M380-740q-33 0-56.5-23.5T300-820q0-33 23.5-56.5T380-900q33 0 56.5 23.5T460-820q0 33-23.5 56.5T380-740ZM120-40l110-564-70 30v134H80v-188l210-86q27-11 55-2.5t43 34.5l38 64q27 44 72.5 71T600-520v80q-66 0-122.5-28T382-544l-24 120 82 82v302h-80v-240l-86-80-70 320h-84Zm550 0v-560H520v-280h360v280H730v560h-60Zm51-601 99-99-99-99-43 43 26 26H580v60h124l-26 26 43 43Z"/></svg>gudines</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  
+                </ul>
+              </li>
+            
+           
+              <li class="nav-item">
+                <a class="nav-link active" id="link3" aria-current="page" href="help&support.html">Help&Support</a>
+              </li>
+              
+            <li class="nav-item">
+              <a class="nav-link active" id="link3" aria-current="page" href="contact.html">Contact Us</a>
+            </li>
+
+
+            </li>
+          </ul>
+          <form action="link.html" class="d-flex" role="search" >
+            <input   class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button type="button" class="btn btn-outline-success">Search</button>
+            
+          </form>
+        </div>
+      </div>
+    </nav>
+<h1>The 
+    customer service platform.</h1>
+<p> Unifies all communication channels, apps and data into one easy to use platform.
+    Use the power of AI and automations to deliver exceptional service at scale..</p>
+    <center>
+    
+
+<!-- ----------------------------------------------------------------------------------------------------------------------------- -->
+<div style="height: 500px; width: 1000px;" id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <div style="height: 600px; width: 800px;" class="card" style="width: 18rem;">
+        <img class="img" src="https://logomak.com/blog/wp-content/uploads/2023/09/Microsoft-Logo-500x163-min.png" alt="">
+        <div class="card-body">
+          <h5 class="card-title">100%</h5>
+          <p class="card-text">SLA success rate</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <div style="height: 600px; width: 800px; "class="card" style="width: 18rem;">
+        <img  class="img" src="https://logomak.com/blog/wp-content/uploads/2023/09/Meta-Logo-500x281-min.png" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">60%</h5>
+                  <p class="card-text">Reduction in first response time</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div  style="height: 600px; width: 800px; "class="card" style="width: 18rem;">
+        <img class="img" src="
+        https://logomak.com/blog/wp-content/uploads/2023/09/Samsung-Logo-2-500x281-min.png" alt="">
+        <div class="card-body">
+          <h5 class="card-title">50%</h5>
+          <p class="card-text">Increase in efficiency</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div  style="height: 600px; width: 800px; "class="card" style="width: 18rem;">
+        <img  class="img"src="https://logomak.com/blog/wp-content/uploads/2023/09/Broadcom-logo-500x281-min.png" alt="">
+        <div class="card-body">
+          <h5 class="card-title">100% </h5>
+          <p class="card-text">Increase in productivity</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div style="height: 600px; width: 800px; "class="card" style="width: 18rem;">
+        <img class="img" src="https://logomak.com/blog/wp-content/uploads/2023/09/Novartis-Logo-500x281-min.png" alt="">
+        <div class="card-body">
+          <h5 class="card-title">50%</h5>
+          <p class="card-text">Descrese in email response time</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> <br> <br> <br>
+    </center>
+    <center>
+      <img class="img1" src="https://images.hiverhq.com/images/landing-2023/conversation-id/hero_left.png" alt="">
+
+      <img class="img2"  src="https://images.hiverhq.com/images/landing-2023/conversation-id/hero_middle.png" alt="">
+      <img  class="img3"  src="https://images.hiverhq.com/images/landing-2023/conversation-id/hero_right.png" alt="">
+      
+    <p class="p1">
+     Customer service, Finance & IT teams across 2,000+ companies use Bs</p>
+     <div class="image">
+      <img class="img1" src="https://images.hiverhq.com/images/2024/logos/veolia-energy.png"
+       alt="">
+       <img class="img1" src="https://images.hiverhq.com/images/2024/logos/flexport.png"
+       alt="">
+       <img  class="img1"src="https://images.hiverhq.com/images/2024/logos/harvard-university.png"
+       alt="">
+       <img class="img1"src="https://images.hiverhq.com/images/2024/logos/epicgames.png"
+       alt="">
+       <img class="img1"src="https://images.hiverhq.com/images/2024/logos/upwork.png"
+       alt="">
+     </div>
+    </center>
+    <center>
+      <div style="background-color: bisque;">
+    <h2>
+      Built for modern <br>
+customer service teams
+</h2>
+
+  <button  id="b1" type="button" class="btn btn-outline-info">Omnichannel Shared Inbox
+    
+  </button>
+  <button  id="b2" type="button" class="btn btn-outline-info">Live Chat with AI
+
+  </button>
+  <button  id="b3"type="button" class="btn btn-outline-info">Customer Portal
+
+  </button> <br>
+  <button  id="b4"type="button" class="btn btn-outline-info">Knowledge Base 
+
+  </button>
+  <button id="b5" type="button" class="btn btn-outline-info">Ticketing
+
+  </button>
+  <button  id="b6"type="button" class="btn btn-outline-info">InfoAutomations
+
+  </button>
+  <button  id="b7"type="button" class="btn btn-outline-info">Analytics </button>
+  <br> 
+  <br>
+  <br>
+</div>
+ <h1 style="margin-top: 30px;">
+  Simplify team work <br>
+to deliver world-class support
+ </h1>
+
+<center>
+<p class="para">
+  <blockquote>
+    <strong style="font-size: 30px;">
+      Come together as a team to <br>
+      serve your customers</strong>
+     <br>
+    Work together behind the scenes to delight customers, employees, and vendors.
+    Have internal discussions on queries without <br> sending more emails or cluttering inboxes. Great customer service is fast customer service. <br> And that’s what live chat helps you achieve. But live chat support isn’t just a boon for support agents. Customers love it too!<br> <img class="imglast"  src="https://images.hiverhq.com/images/2024/homepage/finance-report.png" alt="">
+    <button id="but4"  type="button" class="btn btn-outline-warning">Learn More</button>
+  <button  id="but3" type="button" class="btn btn-outline-warning">Operations </button>
+  </blockquote>
+   
+</p>
+<center>
+</center>
+
+      <iframe width="560" class="home"
+      height="315" src="C:\worksheet\collaboration.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   
+    </center>
+
+  </center>
+ 
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Product Support</h4>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Help Desk</a></li>
+          <li><a href="#">Support Serice</a></li>
+          <li><a href="#">Security</a></li>     <li><a href="#">All Resources</a></li>
+
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Customer Support Guide</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>Address: 20 pudupalaym coimbatore</li>
+          <li>Phone: 998856463</li>
+          <li>Email: <a href="mailto:info@example.com">bhuvishan@mail.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+
+    </body>
+</html>
+      
+    

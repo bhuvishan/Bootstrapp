@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support</title>
+   
+    <style>
+        body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+header nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: space-between;
+}
+
+header nav ul li {
+margin-right: 20px;
+}
+
+header nav a {
+color: #fff;
+text-decoration: none;
+}
+
+main {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+}
+
+section {
+background-color: #f7f7f7;
+padding: 20px;
+margin-bottom: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+color: #333;
+}
+
+button {
+background-color: #333;
+color: #fff;
+border: none;
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #444;
+}
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 10px;
+text-align: center;
+clear: both;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Customer Support</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="display-3">Customer Support</h1>
+                <p class="lead">We're here to help!</p>
+                <button class="btn btn-primary btn-lg">Get Started</button>
+            </div>
+        </section>
+        <section class="knowledge-base">
+            <div class="container">
+                <h2 class="display-4">Knowledge Base</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Getting Started</h3>
+                        <ul>
+                            <li><a href="#">Installation</a></li>
+                            <li><a href="#">Configuration</a></li>
+                            <li><a href="#">Troubleshooting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Features</h3>
+                        <ul>
+                            <li><a href="#">Feature 1</a></li>
+                            <li><a href="#">Feature 2</a></li>
+                            <li><a href="#">Feature 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Tutorials</h3>
+                        <ul>
+                            <li><a href="#">Tutorial 1</a></li>
+                            <li><a href="#">Tutorial 2</a></li>
+                            <li><a href="#">Tutorial 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="community">
+            <div class="container">
+                <h2 class="display-4">Community</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Forums</h3>
+                        <ul>
+                            <li><a href="#">General Discussion</a></li>
+                            <li><a href="#">Feature Requests</a></li>
+                            <li><a href="#">Bug Reports</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Blog</h3>
+                        <ul>
+                            <li><a href="#">Blog Post 1</a></li>
+                            <li><a href="#">Blog Post 2</a></li>
+                            <li><a href="#">Blog Post 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Social Media</h3>
+                        <ul>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <h2 class="display-4">Get in Touch</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Customer Support. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="(link unavailable)"></script>
+    <script>// Add event listener to button
+        document.querySelector('button').addEventListener('click', () => {
+        // Get input values
+        const name = document.querySelector('input[type="text"]').value;
+        const email = document.querySelector('input[type="email"]').value;
+        const message = document.querySelector('textarea').value;
+        
+        // Send data to server (replace with your own API endpoint)
+        fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, email, message }),
+        })
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+        .catch((error) => console.error(error));
+        
+        });
+        </script>
+    
+    </body>
+    </html>

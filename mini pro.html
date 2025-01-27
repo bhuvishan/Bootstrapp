@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/e4f9a391be.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+<style> 
+    a{
+      text-transform: capitalize;
+      text-shadow: 30px,30px,30px,black;
+    border: 5px;    }
+      
+    .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    }
+    .card{
+      flex-basis: 25%;
+     
+    margin-top:50px;
+    
+    margin-block: 50px;
+    margin-right: 125px;
+    opacity: 1;
+
+}
+
+  
+
+@keyframes card {
+  0% {
+    opacity: 1;
+  }
+  
+  25%{
+    opacity:0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+    }
+    .card:hover{
+      transform: scale( 1.1,1.1
+      
+      );
+      animation: card 15s forwards;
+      box-shadow: 3px 3px 3px 3px black;
+    }
+
+
+
+    
+    nav{
+      position:sticky;
+      margin-left: 400px;
+    }
+    .card-img-top{
+height: 200px;
+width:285px;
+    }
+    footer {
+      margin-top: 40PX;
+  background-color: #0c0c0c;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-right: 250px;
+  height: 340px;
+  width: 1540px;
+
+}
+
+.footer-container {
+  max-width: 1230px;
+  margin-top: 20PX;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.footer-address, .footer-links, .footer-social {
+  flex-basis: 30%;
+  margin: 20px;
+}
+
+.footer-address h3, .footer-links h3, .footer-social h3 .footer-logo {
+  margin-top: 20px;
+  
+}
+
+.footer-links ul, .footer-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li, .footer-social li {
+  margin-bottom: 10px;
+}
+
+.footer-social a {
+  color: #f3f0f0;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.footer-copyright {
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+  margin-bottom: 80px;
+  
+ 
+}
+.accordion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px; /* adjust the width as needed */
+  height: 820px; /* adjust the height as needed */
+  overflow-y: auto;
+  background-color:#f2efec;;
+  padding: 20px;
+  border-right: 1px solid #090501;
+}
+.carousel{
+  margin-left: 350px;
+
+}
+
+.logo{
+  margin-right: 50px;
+  
+}
+.btn-close{
+  margin-left: 20px;
+}
+.pic
+{
+  
+height:300px;
+width: 250px;
+opacity: 0;
+  animation: pic 5s forwards;
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+  
+
+@keyframes pic {
+  0% {
+    opacity: 0;
+  }
+  
+  100%{
+    opacity:1 ;
+  }
+  
+}
+h5{
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: double;
+}
+
+
+</style>
+<script>
+document.getElementById("close-button").addEventListener("click", function() {
+window.top.close();
+});
+
+</script>
+
+<body style="background-color:#f2efec;">
+    <nav class="navbar navbar-expand-lg bg-drak">
+      <img class="logo" style="height: 100px; width: 100px;" src="C:\Users\Touch & Go\AppData\Local\Temp\7064e73b-a14a-4603-92bb-a9469352d68d_Vista Logos.zip.68d\logo-png.png" alt="">
+        <div class="container-fluid">
+          
+          <a class="navbar-brand" href="home.html">bs support</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> 
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+               
+               
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   products
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="destop.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M360-400h260q42 0 71-29.5t29-71.5q0-42-30-71t-72-29q-8-51-47-85t-91-34q-41 0-75 22t-51 59q-48 2-81 36.5T240-520q0 50 35 85t85 35Zm0-80q-17 0-28.5-11.5T320-520q0-17 11.5-28.5T360-560h50v-10q0-29 20.5-49.5T480-640q29 0 49.5 20.5T550-570v50h70q8 0 14 6t6 14q0 8-6 14t-14 6H360Zm-40 360v-80h80v-80H160q-33 0-56.5-23.5T80-360v-400q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v400q0 33-23.5 56.5T800-280H560v80h80v80H320ZM160-360h640v-400H160v400Zm0 0v-400 400Z"/></svg>desktop</a></li>
+                    <li><a class="dropdown-item" href="-phone.html"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-120v40h400v-40H280Zm0-80h400v-480H280v480Zm0-560h400v-40H280v40Zm0 0v-40 40Zm0 640v40-40Z"/></svg>smart phone</a></li>
+                    <li><a class="dropdown-item" href="watch.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M420-800h120-120Zm0 640h120-120Zm-60 80-54-182q-48-38-77-95t-29-123q0-66 29-123t77-95l54-182h240l54 182q48 38 77 95t29 123q0 66-29 123t-77 95L600-80H360Zm120-200q83 0 141.5-58.5T680-480q0-83-58.5-141.5T480-680q-83 0-141.5 58.5T280-480q0 83 58.5 141.5T480-280Zm-76-470q20-5 38.5-8t37.5-3q19 0 37.5 3t38.5 8l-16-50H420l-16 50Zm16 590h120l16-50q-20 5-38.5 7.5T480-200q-19 0-37.5-2.5T404-210l16 50Z"/></svg>smart watch</a></li>
+                    <li><a class="dropdown-item" href="head phone.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M360-120H200q-33 0-56.5-23.5T120-200v-280q0-75 28.5-140.5t77-114q48.5-48.5 114-77T480-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480v280q0 33-23.5 56.5T760-120H600v-320h160v-40q0-117-81.5-198.5T480-760q-117 0-198.5 81.5T200-480v40h160v320Zm-80-240h-80v160h80v-160Zm400 0v160h80v-160h-80Zm-400 0h-80 80Zm400 0h80-80Z"/></svg>head set</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">others</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 resources
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="support.html">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M440-120v-80h320v-284q0-117-81.5-198.5T480-764q-117 0-198.5 81.5T200-484v244h-40q-33 0-56.5-23.5T80-320v-80q0-21 10.5-39.5T120-469l3-53q8-68 39.5-126t79-101q47.5-43 109-67T480-840q68 0 129 24t109 66.5Q766-707 797-649t40 126l3 52q19 9 29.5 27t10.5 38v92q0 20-10.5 38T840-249v49q0 33-23.5 56.5T760-120H440Zm-80-280q-17 0-28.5-11.5T320-440q0-17 11.5-28.5T360-480q17 0 28.5 11.5T400-440q0 17-11.5 28.5T360-400Zm240 0q-17 0-28.5-11.5T560-440q0-17 11.5-28.5T600-480q17 0 28.5 11.5T640-440q0 17-11.5 28.5T600-400Zm-359-62q-7-106 64-182t177-76q89 0 156.5 56.5T720-519q-91-1-167.5-49T435-698q-16 80-67.5 142.5T241-462Z"/></svg> support service
+                    </a></li>
+                    <li><a class="dropdown-item" href="help.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>help center</a></li>
+                    <li><a class="dropdown-item" href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>blog</a></li>
+                    <li><a class="dropdown-item" href="T&C.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M380-740q-33 0-56.5-23.5T300-820q0-33 23.5-56.5T380-900q33 0 56.5 23.5T460-820q0 33-23.5 56.5T380-740ZM120-40l110-564-70 30v134H80v-188l210-86q27-11 55-2.5t43 34.5l38 64q27 44 72.5 71T600-520v80q-66 0-122.5-28T382-544l-24 120 82 82v302h-80v-240l-86-80-70 320h-84Zm550 0v-560H520v-280h360v280H730v560h-60Zm51-601 99-99-99-99-43 43 26 26H580v60h124l-26 26 43 43Z"/></svg>gudines</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    
+                  </ul>
+                </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Help&Support
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="register.html    "><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>product issue</a></li>
+                  <li><a class="dropdown-item" href="register.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M240-280q-39 0-69.5-22.5T128-360h-8q-33 0-56.5-23.5T40-440v-320q0-33 23.5-56.5T120-840h482q18 0 34 7t28 21l158 190q9 11 13.5 23.5T840-572v58q35 12 57.5 43.5T920-400q0 50-35 85t-85 35q-39 0-70.5-22.5T686-360H354q-14 35-44.5 57.5T240-280ZM120-640h160v-120H120v120Zm240 200h200v-320H360v120h120v80H360v120Zm280-160h96l-96-116v116ZM240-360q17 0 28.5-11.5T280-400q0-17-11.5-28.5T240-440q-17 0-28.5 11.5T200-400q0 17 11.5 28.5T240-360Zm560 0q17 0 28.5-11.5T840-400q0-17-11.5-28.5T800-440q-17 0-28.5 11.5T760-400q0 17 11.5 28.5T800-360ZM520-40 280-160h160v-80l240 120H520v80ZM120-560v120h6q14-35 44.5-57.5T240-520q11 0 21 1.5t19 4.5v-46H120Zm520 120h46q9-26 28.5-45.5T760-514v-6H640v80ZM120-560h160-160Zm520 40h120-120Z"/></svg>delivery partner issue</a></li>
+                  <li><a class="dropdown-item" href="register.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M240-280q-39 0-69.5-22.5T128-360h-8q-33 0-56.5-23.5T40-440v-320q0-33 23.5-56.5T120-840h482q18 0 34 7t28 21l158 190q9 11 13.5 23.5T840-572v58q35 12 57.5 43.5T920-400q0 50-35 85t-85 35q-39 0-70.5-22.5T686-360H354q-14 35-44.5 57.5T240-280ZM120-640h160v-120H120v120Zm240 200h200v-320H360v120h120v80H360v120Zm280-160h96l-96-116v116ZM240-360q17 0 28.5-11.5T280-400q0-17-11.5-28.5T240-440q-17 0-28.5 11.5T200-400q0 17 11.5 28.5T240-360Zm560 0q17 0 28.5-11.5T840-400q0-17-11.5-28.5T800-440q-17 0-28.5 11.5T760-400q0 17 11.5 28.5T800-360ZM520-40 280-160h160v-80l240 120H520v80ZM120-560v120h6q14-35 44.5-57.5T240-520q11 0 21 1.5t19 4.5v-46H120Zm520 120h46q9-26 28.5-45.5T760-514v-6H640v80ZM120-560h160-160Zm520 40h120-120Z"/></svg>wrong product</a></li>
+                  <li><a class="dropdown-item" href="register.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Z"/></svg>not delivered</a></li>
+                  <li><hr class="dropdown-divider"></li>
+               
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html">Contact US</a>
+              </li>
+
+
+              </li>
+            </ul>
+            <form action="link.html" class="d-flex" role="search" >
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">demo</button>
+              <button type="button" class="btn-close" aria-label="Close" id="close-button".onclick=function() { window.top.close(); };
+              ></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img  style="height: 700px;width: 700px;" src="https://media.istockphoto.com/id/1343714445/vector/social-network-connection-concept-blue-background.jpg?s=612x612&w=0&k=20&c=Z74_o4VV3A4RYqGDWHFV_LpJ2bPHpUX6M3bIltW_c2Q=" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>bs support</h5>
+              <p>"Assumptions are the termites of relationships."</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img style="height: 700px;width: 700px;"src="https://plus.unsplash.com/premium_photo-1661764559869-f6052a14b4c9?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGN1c3RvbWVyJTIwc3VwcG9ydHxlbnwwfHwwfHx8MA%3D%3D" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>bs support</h5>
+              <p>"Ease your customers’ pain." </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img style="height: 700px;width: 700px;" src="https://static.vecteezy.com/system/resources/previews/043/636/043/non_2x/human-resource-management-hr-recruitment-leadership-and-team-building-businessman-holding-on-virtual-screen-with-customer-service-and-support-team-for-quality-photo.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>bs support</h5>
+              <p>"Treat the customer like you would want to be treated. Period!"</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="https://img.freepik.com/premium-vector/technical-support-manager-flat-illustration-customer-support_519955-38.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> product issue</h5>
+              
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="col">
+          <div class="card" style="width: 18rem; ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5FqdQUdQn1Ti2nBXEok-tvBAhKCfk5KN5j3AXRuOb0w5Ms-nxbUV-TdPXWDp_DnzA0_c&usqp=CAU" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">delivery partner issue</h5>
+            
+          
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem; ">
+            <img src="https://t3.ftcdn.net/jpg/04/43/98/24/360_F_443982441_rBudWjP3eXwZ20EAZhvIWNLx4jDr1kup.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">24/7 support</h5>
+           
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem; ">
+            <img src="https://img.freepik.com/free-photo/configuration-operation-splution-system-icons-symbols_53876-133580.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Quick solutions</h5>
+           
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ07MTvQ4wVG5bJetW4pQY5TJmaCBcr_VZT392t-utzscsZbDUmg4GIcBxiLykx5WfobFQ&usqp=CAU" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">wrong product</h5>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0LeHXGLqE4_UUe3RByp1bJqzF1wUkhGIdew&s" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">world wilde delivery</h5>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  What is customer service?
+
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img class="pic" src="https://images.hiverhq.com/blog/wp-content/uploads/2021/06/3x-7-steps-troubleshooting.webp" alt="">
+                  <strong>1. The definition of customer service<br>
+                   
+                  </strong><br> Simply put, customer support is a dedicated function that offers tech support to customers who use a company's products and services. The term is commonly associated with technology and SaaS companies that provide complex IT solutions and whose customers require ongoing technical assistance.
+
+                  A good customer support agent has a thorough understanding and technical know-how of the company's product and service portfolio. The agent also possesses excellent listening and communication skills since support interactions with customers involve high levels of patience, coherence, and concision.
+                  
+                  
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  What is customer success?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img class="pic" src="https://lh3.googleusercontent.com/WCLbK3LIf630nbc_JI3kHTARcY2GA8cBRpyzRFKFbwlC9sL2noowloW7p55mdYq_BaaEKoOzWko4-DCO-kIx-tc_GuJE3biKH792bb1R31W2hGrFXYL2mk7SgnzfzXSX8JGOjke6rpctqRr-6LQcYtU" alt="">
+                  <strong>1. The definition of customer success</strong> Customer success is a business function aimed at helping customers achieve their goals sustainably. This function ensures that all of the interactions customers have with your brand holistically contribute to their organization’s overall growth and success.
+
+                  Customer success is very much relationship-focused -- with every customer success manager responsible for a specific number of clients, ensuring they derive maximum value from the product or service.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  What are the most common customer support issues?
+
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                 <img  class="pic" src="https://images.hiverhq.com/images/sm-pillar/graph@2x.png" alt="">
+                  <strong>1. The toughest customer support challenges and how to overcome them</strong> Customer support can be a tough job, but when done right, it can also be one of the key factors responsible for building customer loyalty and retention. Gone are the days when customer support and service were considered inconsequential to a brand’s sustenance and growth. Today, a single unhappy customer can cost your business a lot of money and bring down its reputation.
+
+                  According to Hiver’s Customer Support Through The Eyes of Consumers in 2020 survey, 70% of customers will advise their friends and colleagues against buying a brand’s product/service after a negative customer service experience.
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <marquee style="color: yellowgreen;" behavior="" direction=""><img class="logo" style="height: 100px; width: 100px;" src="https://st3.depositphotos.com/4035913/16644/v/450/depositphotos_166441190-stock-illustration-bs-brush-stroke-letter-logo.jpg"  alt=""> <img class="logo" style="height: 100px; width: 100px;"src="https://images.moneycontrol.com/static-mcnews/2023/06/Meesho-682x435.jpg?impolicy=website&width=1600&height=900" alt=""><img class="logo" style="height: 100px; width: 100px;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeh3e1LKXEhGhkGTOGV47Irj7X3XwDDgiuCg&s"  alt=""><img  class="logo" style="height: 100px; width: 100px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeOjPFZxllzxUeMnuXnh0XdRihcC01h3ShWQ&s" alt=""> <img class="logo" style="height: 100px; width: 100px;" src="https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png" alt=""> <img class="logo" style="height: 100px; width: 100px;" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/388eca72914835.5bf79177986e4.jpg" alt=""> <img class="logo" style="height: 100px; width: 100px;" src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/efkv0xz2wi1jlaemigx7" alt=""> <img class="logo" style="height: 100px; width: 100px;" src="https://media.licdn.com/dms/image/D5612AQFhmKFkheQ9ww/article-cover_image-shrink_720_1280/0/1719490062904?e=2147483647&v=beta&t=an5FeImJ-Y7abiE90FqfknMtKg1Xw-7GUzw7usi5dAo" alt=""> <img class="logo" style="height: 100px; width: 100px;"src="https://asset20.ckassets.com/blog/wp-content/uploads/sites/5/2022/08/best-online-shopping-apps-in-india.jpg" alt=""> </marquee>
+    <footer>
+      <div class="footer-container">
+        
+        <div class="footer-address">
+          <img class="logo" style="height: 100px; width: 100px;" src="https://st3.depositphotos.com/4035913/16644/v/450/depositphotos_166441190-stock-illustration-bs-brush-stroke-letter-logo.jpg" alt="">
+          <h3>Our Address</h3>
+          <p>123 Main St, Anytown, USA 12345</p>
+          <p>Phone: 555-555-5555</p>
+          <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        &copy; 2023 Example Company. All rights reserved.
+      </div>
+    </footer>
+    
+</body>
+</html>
